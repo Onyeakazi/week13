@@ -1,7 +1,6 @@
 <?php
-
     error_reporting(E_ALL);
-  ini_set('display_errors', 1);
+    ini_set('display_errors', 1);
 
 ?>
 
@@ -56,5 +55,21 @@
     ?>
     <h1>today we are learning <?php echo $tech ?></h1>
     <h1>today we are learning <?= $tech ?></h1>
+
+    <form action="process_calc.php" method="POST">
+        <label>Number 1:</label>
+        <input type="number" name="num1" required>
+        
+        <label>Operation:</label>
+        <select name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+        </select>
+        
+        <label>Number 2:</label>
+        <input type="number" name="num2" required>
+        
+        <button type="submit">Calculate</button>
+    </form>
 </body>
 </html>
