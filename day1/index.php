@@ -52,7 +52,7 @@
         $input = $_POST['username'] ?? 'hhhh'; // Null coalescing operator fallback
 
         if (isset($input) && !empty($input)) {
-            echo "Username is provided.";
+            // echo "Username is provided.";
         }
         
         // Inspecting structures during debugging:
@@ -64,11 +64,11 @@
         }
         
         $bill = calculateTotal(100); // Returns 105
-        echo "<p>Your total bill is $$bill</p>";
+        // echo "<p>Your total bill is $$bill</p>";
     
     ?>
 
-    <!-- <h1>Welcome, <?//php echo $name; ?>!</h1> -->
+    <h1>Welcome, <?php echo $name; ?>!</h1>
     <h1>Welcome, <?= $name; ?>!</h1>
     
 </body>
